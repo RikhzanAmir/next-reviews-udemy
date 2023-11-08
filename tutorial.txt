@@ -1,0 +1,66 @@
+Tutorial
+1. install next = npm install next react react-dom
+2. creating an app and layout.jsx folder and file
+3. set .gitignore to ignore file to be uploaded into git
+4. create a page.jsx with h1 my First Next js file
+5. adding "script"->"dev" in package.json to run the code
+6. under app/reviews/page.tsx is a path directory
+7. create nested folder inside review and create page.tsx file.
+8. app/reviews/stardew-valley/pagetsx directory (nested layout)
+    / = root segment
+    / reviews / = segment
+    / stardew-valley = leaf segment
+9. this nested layout make the ui more accessible if want to update certain page, certain layout can be share among the components.
+10. useEffect run on client site, since this is server site, error occurs and suggest to "use client" directive.
+
+Next js with App Router
+Server components
+- Default is server
+- Render only on server -> no js sent to the browser, if set no js, it still can render and show into browser. make it more efficient.
+- Can use server-side functionality eg. node js APIs 
+- Cannot use client-side functionality eg. useEffect, OnClick, window.*
+
+Client components
+- 'use client' directive to use client component like alert
+- rendered on both server + client
+- able to use client-side functionality
+
+
+11. Production vs Dev
+    - build = create and optimise production build
+    - start = run server on production mode
+    - dev = to do dev, it is not as fast after build and start but it is realtime update.
+
+12. Using Link, Link vs a href, make it more faster like SPA
+13. Prefetching - if the mouse hover to link without click,  next js will does fetching data from server.
+set Prefetch = false will unble link to fetch data without click on it
+14. creating globals.css
+15. installing tailwind css dependencies. 
+    [npm install --save-dev tailwindcss postcss autoprefixer]
+    [npx tailwindcss init --postcss]
+    add "./app/**/*.{jsx,tsx}" into tailwind.config.css only use tsx and jsx, remove other to make it fast to build
+    according to https://tailwindcss.com/docs/guides/nextjs
+
+    adding 
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+    into globals.css
+
+    install Tailwind css intellisense on vscode
+
+15. Creating a components. use children to forwarding parameter. 
+16. alias @, setup the alias on tsconfig.json. it is use to simplify the path, eg ../../components the  
+    alias will replace the ../../ into @/components/{any}
+
+            
+        "compilerOptions": {
+            "baseUrl": ".",
+            "paths": {
+            "@/components/*": ["components/*"]
+            }
+        }
+        tsconfig.json
+
+17.
