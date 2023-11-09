@@ -23,7 +23,9 @@
     ],
     "baseUrl": ".",
     "paths":{
-      "@/Components/*":["components/*"]
+      "@/components/*":["components/*"], 
+      "@/lib/*": ["lib/*"]
+       
     }
   },
   "include": [
@@ -31,7 +33,7 @@
     ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx"
-  ],
+, "app/fonts.js", "app/fonts.js", "lib/reviews.js"  ],
   "exclude": [
     "node_modules"
   ] 

@@ -63,4 +63,14 @@ set Prefetch = false will unble link to fetch data without click on it
         }
         tsconfig.json
 
-17.
+17. statis assets on public folder
+18. create a fonts.js, using next to download a font in google.. configure tailwind.config.js font      family orbitron, after that we can call the font in a classname
+19. marked npm <article dangerouslySetInnerHTML={{ __html:html}} />  using to to display in html, not disply html
+20. use tailwindcss/typography install and configure into tailwind.config.js className="prose" to activate the tailwind/typography in html
+21. gray matter npm
+    
+    gray-matter to 
+    ---
+    title : Hello
+    date : 2023-11-23
+    ---
