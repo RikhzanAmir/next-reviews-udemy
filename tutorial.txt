@@ -74,3 +74,8 @@ set Prefetch = false will unble link to fetch data without click on it
     title : Hello
     date : 2023-11-23
     ---
+
+22. dynamic routes
+    rename the folder to slug, slug is a parameter to remain actual value as path segment.
+
+23. icon.png just put in app/icon.png

@@ -3,6 +3,14 @@ import './globals.css'
 import Navbar from "@/components/Navbar"
 import { orbitron } from "./fonts"
 
+export const metadata = { //for seo 
+    title: {
+        description : "Only the best indie games, reviewed for you.",
+        default : 'Indie Gamer',
+        template: '%s | Indie Gamer',
+    } 
+} 
+  
 export default function RootLayout({children}){ 
     return (
         <html lang="en" className={orbitron.variable}>
