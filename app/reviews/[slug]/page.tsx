@@ -1,5 +1,6 @@
 
 import Heading from "@/components/Heading";
+import ShareButtons from "@/components/ShareButton"; 
 import { getReview, getSlugs } from "@/lib/reviews";
 
 // q: what is the purpose of this function?
@@ -24,8 +25,10 @@ export default async function ReviewPage({params: {slug}}) {
     console.log('[ReviewPage] rendering', slug);
     return ( <>
         <Heading>{review.title}</Heading>
+        <div className="flex gap-3 items-baseline">
         <div className="flex gap-3"></div>
         <p className='italic pb-2 px-2'>{review.date}</p>
+        <ShareButtons/></div>
         <img src={ review.image } alt="" 
             width={640} height={360} className="rounded-lg shadow-lg mb-2"
         />

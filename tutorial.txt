@@ -79,3 +79,6 @@ set Prefetch = false will unble link to fetch data without click on it
     rename the folder to slug, slug is a parameter to remain actual value as path segment.
 
 23. icon.png just put in app/icon.png
+
+24. All server component are server side in default. put 'use client' to indicate component as client side
+25. Use heroicons npm install @heroicons/react
